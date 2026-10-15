@@ -23,4 +23,14 @@ h1{font-size:clamp(2.5rem,5.3vw,4.75rem);line-height:1.1;margin:16px auto;max-wi
 
 /* Áreas de toque e controles opcionais sem sobrepor a leitura. */
 h1,h2,h3,.receipt-flow span{overflow-wrap:anywhere}
+.button{border-radius:14px;min-height:58px;padding-inline:28px;font-size:1.0625rem;transition:transform .16s ease,box-shadow .16s ease,background-color .16s ease}
+.button:hover{transform:translateY(-2px);box-shadow:0 7px 0 #65223c}
+.hero-impact,.receipt,.comparison,figure,.note{border-radius:16px}
+.comparison{overflow:hidden}
+.discount-control input{border-radius:10px}
+figure img{border-radius:10px}
+.note{border-left-width:4px}
+.faq details{border:1px solid var(--line);border-radius:12px;margin-block:10px;padding-inline:18px;background:var(--white)}
+.mobile-bar{border-radius:18px 18px 0 0}
+@media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover{transform:none}}
 .header-link,.text-link{display:inline-flex;align-items:center;min-height:44px}.hero-format{margin:0 auto 16px}.consent-actions{display:flex;flex-wrap:wrap;gap:12px}.consent-deny{background:var(--white);color:var(--plum);box-shadow:none}.consent-deny:hover{background:var(--cream);border-color:var(--plum)}#metricas{padding-block:24px;border-top:1px solid var(--line)}#metricas h2{font-size:1.5rem}#metricas p{font-size:.9375rem}#metricas [data-consent-status]{margin-top:16px}.button:disabled{cursor:default;box-shadow:none}input{caret-color:var(--plum)}::selection{background:var(--cream);color:var(--ink)}
