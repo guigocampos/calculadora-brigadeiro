@@ -1,7 +1,6 @@
-// Só habilite o checkout após cumprir o checklist de lançamento no README.
 window.SITE_CONFIG = {
-  checkoutUrl: '',
-  launchReady: false,
+  checkoutUrl: 'https://pay.kiwify.com.br/n6ohTC4',
+  launchReady: true,
   siteUrl: '',
   // Só códigos de campanha, nunca nomes, e-mails ou outros dados pessoais.
   utmAllowlist: {
