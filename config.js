@@ -12,6 +12,6 @@ window.SITE_CONFIG = {
   },
   analytics: {
     enabled: true,
-    measurementId: 'G-EYG7DTHCNF'
+    measurementId: 'G-YT2Y57923C'
   }
 };
