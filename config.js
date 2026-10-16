@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
     utm_term: []
   },
   analytics: {
-    enabled: false,
-    measurementId: ''
+    enabled: true,
+    measurementId: 'G-EYG7DTHCNF'
   }
 };
