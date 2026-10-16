@@ -30,8 +30,6 @@
     Object.entries(utm).forEach(([key, value]) => checkout.searchParams.set(key, value));
     document.querySelectorAll('[data-launch-status]').forEach(el => el.textContent = 'Compra disponível no checkout Kiwify.');
     document.querySelector('.mobile-bar small').textContent = 'pagamento único';
-    document.querySelector('#pre-lancamento h2').textContent = 'Sua encomenda com a conta à vista.';
-    document.querySelector('#pre-lancamento p:not(.eyebrow)').textContent = 'Confira as condições de entrega, suporte e reembolso antes de seguir ao checkout.';
   }
   document.querySelectorAll('[data-buy]').forEach(link => {
     link.href = live ? checkout.href : '#pre-lancamento';
