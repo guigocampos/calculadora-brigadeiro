@@ -16,7 +16,7 @@
   campaignKeys.forEach(key => {
     const value = params.get(key); if (params.getAll(key).length === 1 && campaignCode(key,value)) utm[key] = value;
   });
-  // Histórico local de diagnóstico; analytics.js só envia após autorização explícita.
+  // Keep only allowlisted campaign codes and product interaction events.
   const events = [];
   const track = (name, detail = {}) => {
     const event = { name, at: new Date().toISOString(), utm: { ...utm }, ...detail };
