@@ -1,7 +1,7 @@
 window.SITE_CONFIG = {
   checkoutUrl: 'https://pay.kiwify.com.br/n6ohTC4',
   launchReady: true,
-  siteUrl: '',
+  siteUrl: 'https://calculadora-brigadeiro.vercel.app/',
   // Só códigos de campanha, nunca nomes, e-mails ou outros dados pessoais.
   utmAllowlist: {
     utm_source: ['instagram', 'youtube'],
@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
     utm_term: []
   },
   analytics: {
-    enabled: true,
-    measurementId: 'G-EYG7DTHCNF'
+    enabled: false,
+    measurementId: ''
   }
 };

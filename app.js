@@ -50,7 +50,8 @@
     try {
       const url = new URL(config.siteUrl);
       if (url.protocol === 'https:' && !url.username && !url.password && !url.search && !url.hash) {
-        const canonical = document.createElement('link'); canonical.rel = 'canonical'; canonical.href = url.href; document.head.append(canonical);
+        const canonical = document.querySelector('link[rel="canonical"]') || document.createElement('link'); canonical.rel = 'canonical'; canonical.href = url.href; if (!canonical.isConnected) document.head.append(canonical);
+        document.querySelector('[property="og:url"]').content = url.href;
         document.querySelector('[property="og:image"]').content = new URL('img/og.png', url).href;
       }
     } catch {}
