@@ -21,9 +21,4 @@
     else Object.assign(params, {placement: detail.placement, mode: detail.mode || 'checkout'});
     window.gtag('event', detail.name, params);
   });
-
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
-  document.head.append(script);
 })();
